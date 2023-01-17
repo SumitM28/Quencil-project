@@ -1,0 +1,70 @@
+.navbar {
+    background: #151414;
+    height: 80px;
+    width: 100%;
+}
+
+.navContainer {
+    height: 100%;
+    padding: 0 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navLogo {
+    height: 70%;
+}
+
+.navMenu {
+    display: flex;
+    gap: 2rem;
+}
+
+.navItems {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navToggle {
+    display: none;
+}
+
+.togglebtn {
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.navMenuToggle{
+    display: none;
+}
+@media screen and (max-width:1285px) {
+    .navMenu {
+        display: none;
+    }
+
+    .navToggle {
+        display: flex;
+    }
+
+    .navMenuToggle {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        background-color: #151414;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:450px){
+    .navContainer{
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,269 @@
+.section{
+    padding: 40px;
+}
+.main{
+    background-image: url('../../img/bg.png');
+    background-color:darkblue ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:89vh;
+}
+.mainContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.mainImg{
+    width: 100%;
+    object-fit: cover;
+}
+.mainInfo{
+    height: 50vh;
+    width: 70%;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.mainDes{
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
+.mainBtn{
+    width: 30%;
+    background-color: #043f87;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 40px 0 0 70px;
+    border: 0;
+}
+
+.Founders,.placement{
+    background-color: #003474;
+}
+.fContainer,.placementContainer{
+    display: flex;
+    padding: 40px;
+    border: 2px dashed gray;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.fInfo{
+    width: 70%;
+    gap: 1rem;
+}
+.fTitle,.placementTitle{
+    font-size: 2.2rem;
+    color: #fff;
+   font-family: Nunito, sans-serif;
+   font-weight: 600;
+}
+.fDes,.placementDes{
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+.fbox {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+}
+.fBtn, .placementBtn{
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 0;
+}
+.placementInfo{
+    width: 65%;
+}
+.placementbox{
+    width: 35%;
+
+}
+.products{
+    background-color: #040f43;
+}
+.pContainer{
+    padding: 6rem 0 3rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.pTitle{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    word-spacing: 4px;
+}
+.pSubtitle{
+    color: white;
+    margin-top: 1.5rem;
+}
+.pCard{
+    padding: 5px;
+    width: 350px;
+    color: white;
+}
+.pCartImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.pCardInfo{
+    padding: 0 0 0 4rem;
+}
+.s3Desc{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin: 3rem 0 0 0
+}
+.s3Img{
+    width: 65%;
+}
+
+/* alumini section */
+.alumini{
+    background: #040f43;
+}
+.aTitle{
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+.aContainer{
+    padding: 70px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+.aCard{
+    width: 180px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+/* breakpoints */
+@media screen and (max-width:1050px){
+    .mainImg {
+        width: 70%;
+        object-fit: scale-down;
+    }
+    .mainInfo {
+        height: 75vh;
+        margin-left: 0rem;
+    }
+    .s3Img{
+        width: 60%;
+    }
+}
+@media screen and (max-width:971px){
+    .mainContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainImg {
+        width: 50%;
+    }
+    .mainInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .mainDes{
+        text-align: center;
+
+    }
+    .mainBtn{
+        margin: 1rem 0 0 0 ;
+    }
+    .main{
+        height: 88vh;
+    }
+    .s3Img{
+        width: 70%;
+        margin: auto;
+    }
+    .s3Container{
+        flex-direction: column;
+    }
+    .s3Info{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:760px){
+    .main{
+        height: 73vh;
+    }
+    .fContainer{
+        flex-direction: column;
+    }
+    .fbox {
+        display: flex;
+        margin: 0 auto;
+    }
+    .fInfo {
+        width: 100%;
+    }
+    .section,.fContainer,.placementContainer{
+        padding: 30px;
+    }
+    .aContainer{
+        gap: 1.5rem;
+        padding: 70px 30px;
+    }
+    .placementContainer{
+        flex-direction: column;
+    }
+    .placementInfo{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px){
+    .mainDes{
+        font-size: 1.5rem;
+    }
+    .mainBtn{
+        width: 51%;
+    }
+    .main{
+        height: 50vh;
+    }
+    .section,.fContainer,.placementContainer{
+        padding: 25px;
+    }
+    .fbox{
+        width: 250px;
+        height: 250px;
+    }
+    .pContainer{
+        padding: 6rem 0 3rem 0rem;
+      
+    }
+    .s3Desc {
+        font-size: 1.2rem;
+
+    }
+}
